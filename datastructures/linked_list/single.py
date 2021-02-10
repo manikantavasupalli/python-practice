@@ -40,7 +40,7 @@ class LinkedList:
 		'''
 		Just create a link. So Linked list contains only one node
 		'''
-		node = Node(data, None)
+		node = Node(data, self.head)
 		self.head = node
 		
 	def insert_at(self, data, index):
@@ -142,6 +142,8 @@ if __name__ == "__main__":
 	ll.remove_by_value("orange") # remove orange from linked list
 	ll.print()
 	ll.remove_by_value("figs")
+	ll.print()
+	ll.insert_at_begin("mani")
 	ll.print()
 	ll.remove_by_value("banana")
 	ll.remove_by_value("mango")
